@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Speed Writezz</title>
+	</head>
+	<body>
+		<div id="row1">
+			<h1 id="mainHeadder" class="headderAnimation">Speed WritEzz</h1>
+			<p id="keyPressInf">Press a key to start</p>
+			<!--DISPLAY NONE ATM-->
+		</div>
+		<main id="preRun">
+			<!--Display none ATM-->
+			<h1>Info</h1>
+			<h1 style="text-align: center; font-size: 20px; letter-spacing: 1px">
+				A text will appear on screen replacing this info box <br />
+				your goal is to re-write the text without messing up a single letter,
+				<br />
+				your progress will be visibly displayed on screen as <br />you are
+				completing the challenge
+			</h1>
+		</main>
+		<section id="textArena">
+			<h2 id="clock">0</h2>
+			<h2 id="misCounter">0</h2>
+			<p id="theText"></p>
+			<span style="display: block; width: 10.5px"></span>
+		</section>
+		<section id="endGame" style="display: none">
+			<h1 id="GGheadder">Speed WritEzz</h1>
+			<div id="EGR1" class="bungee-spice-regular">
+				<i
+					class="fa-regular fa-thumbs-up"
+					style="
+						rotate: 180deg;
+						font-size: 70px;
+						transform: rotate(35deg) translateY(55px) translateX(25px);
+					"
+				></i>
+				<p>GG</p>
+				<i
+					class="fa-regular fa-thumbs-up"
+					style="font-size: 70px; transform: translateY(-10px)"
+				></i>
+			</div>
+			<div id="container">
+				<div id="col1">
+					<h1 id="timerDisplay">Time:&nbsp;</h1>
+					<h1 id="mistakesDisplay">Mistakes:&nbsp;</h1>
+				</div>
+				<div id="col2">
+					<h1>Keys mispressed</h1>
+					<p id="misPressedList"></p>
+				</div>
+			</div>
+			<div id="row3">
+				<button id="playAgain">Play Again</button>
+			</div>
+		</section>
+		<div id="cursor"></div>
+		<script type="module" defer src="main.js"></script>
+	</body>
+</html>

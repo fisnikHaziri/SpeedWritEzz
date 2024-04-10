@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	color: #dcdde1;
+	transition: 0.5s;
+	margin: 0;
+	height: 100vh;
+	background-color: #4083b7;
+	cursor: none;
+	overflow: hidden;
+}
+
+#cursor {
+	position: absolute;
+	height: 20px;
+	aspect-ratio: 1;
+	border: 1px solid hsl(248, 10%, 35%);
+	border-radius: 100%;
+	box-sizing: border-box;
+	opacity: 0.5;
+}
+
+.glow {
+	box-shadow: 0 0 50px 20px rgb(228, 135, 228);
+}
+
+#row1 {
+	color: whitesmoke;
+	text-align: center;
+	margin-bottom: 4rem;
+	flex-direction: column;
+	*:last-child {
+		font-size: 30px;
+		font-weight: 200;
+		text-decoration: underline wavy 1px;
+		letter-spacing: 2px;
+	}
+}
+#mainHeadder {
+	color: #27262e;
+	font-size: 50px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+#preRun {
+	color: whitesmoke;
+	margin-left: 30%;
+	margin-top: 10rem;
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 0.5px solid white;
+	padding: 2px;
+	border-radius: 20px;
+}
+
+#textArena {
+	display: none;
+	align-self: center;
+	border: 1px solid #dcdde1;
+	background-color: rgb(228, 135, 228, 0.15);
+	border-radius: 7px;
+	width: 60%;
+	padding: 3rem;
+	margin: 10% 20% 0 20%;
+	font-size: 24px;
+	letter-spacing: 2px;
+	&:hover ~ #cursor {
+		box-shadow: 0 0 0 0;
+	}
+}
+
+#theText {
+	color: #dcdde1;
+	font-size: 34px;
+	font-weight: 400;
+	&:hover ~ #cursor {
+		box-shadow: 0 0 0 0;
+	}
+}
+
+#clock {
+	font-size: 3rem;
+	position: absolute;
+	top: 18%;
+	right: 50%;
+}
+
+#misCounter {
+	color: #26a96c;
+	font-size: 3rem;
+	position: absolute;
+	top: 18%;
+	right: 22%;
+}
+
+.dimed {
+	opacity: 0.2;
+}
+
+.correct {
+	opacity: 1;
+}
+
+.headderAnimation {
+	animation: headderNimation 2s infinite forwards ease-in-out;
+}
+
+@keyframes headderNimation {
+	35% {
+		opacity: 0.7;
+		letter-spacing: 25px;
+	}
+}
+
+#endGame {
+	height: 100vh;
+}
+
+#GGheadder {
+	color: #dcdde1;
+	position: absolute;
+	left: 30px;
+	font-size: 50px;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+
+#EGR1 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	height: 15%;
+	font-size: 120px;
+	font-family: 'Rowdies', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	margin-bottom: 7rem;
+}
+
+#container {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#col1 {
+	width: 50%;
+	border-right: 2px solid whitesmoke;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 50px;
+	font-weight: 400;
+}
+
+#col2 {
+	height: 460px;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+	width: 50%;
+	border-right: 2px solid whitesmoke;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+#row3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 35px;
+}
+
+#playAgain {
+	font-size: 80px;
+	border-radius: 20px;
+	padding: 10px;
+	font-weight: 100;
+	background: transparent;
+	box-shadow: none;
+	border: 1px solid #dcdde1;
+	color: #dcdde1;
+	&:hover {
+		transition: 0.5s ease-in-out;
+		background-color: #dcdde1;
+		color: indianred;
+		cursor: none;
+	}
+}
+
+#misPressedList {
+	color: #dcdde1;
+	font-size: 45px;
+	letter-spacing: 3px;
+}
